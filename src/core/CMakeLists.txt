@@ -7,12 +7,6 @@ target_sources(
         src/STLReader.cpp
 )
 
-target_include_directories(
-    stlfix_core
-    PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
-
 target_compile_features(
     stlfix_core
     PUBLIC

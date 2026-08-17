@@ -1,7 +1,15 @@
 {
   "name": "stlfix",
   "version-string": "0.1.0",
-  "dependencies": [
-    "catch2"
-  ]
+
+  "dependencies": [],
+
+  "features": {
+    "tests": {
+      "description": "Build STLFix tests",
+      "dependencies": [
+        "catch2"
+      ]
+    }
+  }
 }
