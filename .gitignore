@@ -1,0 +1,28 @@
+# Build
+/build/
+/out/
+
+# vcpkg
+/vcpkg_installed/
+
+# VS Code local settings
+.vscode/
+
+# Visual Studio
+.vs/
+
+# CMake
+CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+
+# binaries
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,0 +1,39 @@
+{
+  "version": 6,
+
+  "configurePresets": [
+    {
+      "name": "debug",
+      "displayName": "STLFix Debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "STLFIX_BUILD_TESTS": "ON"
+      }
+    },
+
+    {
+      "name": "release",
+      "displayName": "STL-Fix Release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "STLFIX_BUILD_TESTS": "OFF"
+      }
+    }
+  ],
+
+  "buildPresets": [
+    {
+      "name": "debug",
+      "configurePreset": "debug"
+    },
+
+    {
+      "name": "release",
+      "configurePreset": "release"
+    }
+  ]
+}
