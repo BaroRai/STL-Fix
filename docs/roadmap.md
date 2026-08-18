@@ -16,7 +16,7 @@ introduces the stable desktop application and GPU-backed viewport.
 - reusable core, CLI, and Catch2 test targets;
 - architecture, repair policy, and agent instructions.
 
-## 0.2 - Geometry and mesh foundation
+## 0.2 - Geometry and mesh foundation (in progress)
 
 - `Vec3`, `Triangle`, `BoundingBox`, and `Mesh`;
 - explicit ownership and read-only traversal;
@@ -87,4 +87,3 @@ does not reserve empty version numbers merely to reach a predetermined count.
 GPU acceleration initially belongs to visualization. Moving a core algorithm to
 the GPU requires deterministic CPU reference results, profiling evidence, and an
 architecture decision that preserves a non-GUI core.
-
