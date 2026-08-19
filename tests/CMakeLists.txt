@@ -2,6 +2,9 @@ find_package(Catch2 3 CONFIG REQUIRED)
 
 add_executable(
     stlfix_tests
+    core/GeometryTests.cpp
+    core/MeshRepairTests.cpp
+    core/MeshTests.cpp
     core/STLReaderTests.cpp
 )
 
