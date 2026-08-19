@@ -22,7 +22,7 @@ introduces the stable desktop application and GPU-backed viewport.
 - explicit ownership and read-only traversal;
 - unit tests for geometry invariants and numerical edge cases.
 
-## 0.3 - STL input
+## 0.3 - STL input (in progress)
 
 - binary and ASCII readers;
 - automatic format detection;
@@ -39,7 +39,7 @@ introduces the stable desktop application and GPU-backed viewport.
 - deterministic text and JSON reports;
 - `stlfix analyze model.stl`.
 
-## 0.5 - Conservative repair preview
+## 0.5 - Conservative repair preview (in progress)
 
 - explicit repair plans and reports;
 - safe duplicate and degenerate cleanup;

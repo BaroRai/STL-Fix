@@ -5,7 +5,9 @@ target_sources(
     PRIVATE
         src/Geometry.cpp
         src/Mesh.cpp
+        src/MeshRepair.cpp
         src/STLReader.cpp
+        src/StlWriter.cpp
 )
 
 target_include_directories(

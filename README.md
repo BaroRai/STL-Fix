@@ -116,6 +116,16 @@ The first useful CLI workflow will be:
 stlfix.exe analyze model.stl
 ```
 
-It will report the detected format, triangle count, bounding box, reconstructed
-topology statistics, and deterministic diagnostics. Advanced repair begins only
-after parsing and mesh representation are tested and stable.
+It reports the detected format, triangle count, and bounding box. Reconstructed
+topology statistics and deterministic defect diagnostics will be added in the
+next analysis stage.
+
+The first conservative repair workflow is:
+
+```powershell
+stlfix.exe repair input.stl repaired.stl
+```
+
+It removes only exact degenerate and same-orientation duplicate triangles, writes
+an ASCII STL, and reports every removed triangle. Ambiguous topology repair is
+not performed by this initial command.
