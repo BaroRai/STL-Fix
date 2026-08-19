@@ -129,3 +129,27 @@ stlfix.exe repair input.stl repaired.stl
 It removes only exact degenerate and same-orientation duplicate triangles, writes
 an ASCII STL, and reports every removed triangle. Ambiguous topology repair is
 not performed by this initial command.
+
+## Included test object
+
+The repository contains a deliberately damaged synthetic cube at
+`tests/fixtures/synthetic/damaged_cube.stl`. It has 14 input triangles: the 12
+faces of a triangulated cube, one same-orientation duplicate, and one degenerate
+triangle. Try the complete workflow from the repository root:
+
+```powershell
+cmake --preset debug
+cmake --build --preset debug
+ctest --preset debug
+
+.\build\debug\src\cli\stlfix.exe analyze `
+    .\tests\fixtures\synthetic\damaged_cube.stl
+
+.\build\debug\src\cli\stlfix.exe repair `
+    .\tests\fixtures\synthetic\damaged_cube.stl `
+    .\build\debug\repaired_cube.stl
+```
+
+The repair report should show one removed duplicate, one removed degenerate
+triangle, and 12 output triangles. Fixture provenance and expected results are
+documented in [`tests/fixtures/README.md`](tests/fixtures/README.md).

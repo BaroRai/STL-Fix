@@ -115,7 +115,7 @@ Use `build\release` and the release preset for the corresponding release clean.
 When the test target is enabled and built:
 
 ```powershell
-ctest --test-dir build/debug --output-on-failure
+ctest --preset debug
 ```
 
 The suite will combine unit tests, generated corruptions, and small regression
@@ -129,4 +129,3 @@ After a Windows release build:
 ```powershell
 .\build\release\src\cli\stlfix.exe
 ```
-
